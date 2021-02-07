@@ -119,10 +119,8 @@ void loop() {
   rgb24 *buffer = backgroundLayer.backBuffer(); // smartmatrix3 fuction for backBuffer https://github.com/pixelmatix/SmartMatrix/blob/master/MIGRATION.md#porting-fastled-sketch-to-smartmatrix
   // Don't clear screen if waterfall pattern, be sure to change this is you change the patterns / order
   backgroundLayer.fillScreen({0, 0, 0});
-  if (buttonPushCounter != 5)//
 
-
-    modeBtn.read();
+  modeBtn.read();
 
   // Reset bandValues[]
   for (int i = 0; i < NUM_BANDS; i++) {
