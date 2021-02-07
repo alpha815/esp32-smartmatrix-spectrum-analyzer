@@ -86,7 +86,7 @@ uint8_t colorTimer = 0;
 // XY code for serpentine matrix with input in top left this code need some fix display is upside down idk why
 uint16_t XY( uint8_t x, uint8_t y) {
   uint16_t i;
-  i = (y * kMatrixWidth) + x;
+    i = ((kMatrixHeight - 1 - y) * kMatrixWidth) + x;
   return i;
 }
 void setup() {
@@ -321,7 +321,7 @@ void loop() {
   }
 
   EVERY_N_SECONDS(10) {
-    if (autoChangePatterns) buttonPushCounter = (buttonPushCounter + 1) % 6;
+    if (autoChangePatterns) buttonPushCounter = (buttonPushCounter + 1) % 5;
   }
 
   backgroundLayer.swapBuffers();
