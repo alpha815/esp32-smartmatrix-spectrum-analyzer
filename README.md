@@ -8,7 +8,6 @@ Scott Marley video: "https://www.youtube.com/watch?v=Mgh2WblO5_c"
 "https://github.com/s-marley/ESP32_FFT_VU"
 what is not working :
 waterfall pattern from original sketch was not working due to improper" XY " coordination that's why i deleted it.
-display is upside down I tried few things but things got worse that is why I left it as it is.
 switching between patterns is not working properly it get stuck on last pattern and then you have to reset esp32 there might be work around for this by setting  "bool autoChangePatterns = false;"  to true but i did not tested it.(if someone can fix it it will be highly appreciated)
 you may need to tune few parameters based on how you feed audio signal to esp32 play around with amplitude and noise value .
 I am using this circuit for line in:
