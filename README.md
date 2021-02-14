@@ -21,3 +21,5 @@ fastled:
 https://github.com/FastLED/FastLED
 arduinoFFT:
 https://github.com/kosme/arduinoFFT
+and a short video with max9814 mic input, it does not look pretty well with mic input but i will upload with a line-in version very soon.
+https://youtu.be/gD1bOLCC0y8
